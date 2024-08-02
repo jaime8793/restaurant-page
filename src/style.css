@@ -1,88 +1,87 @@
-/* src/style.css */
-
-:root {
-  --main-color: rgb(255, 248, 242);
-  --accent-color: rgb(237, 157, 95);
-  --second-color: rgb(240, 216, 118);
-}
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--main-color);
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
   background: url("https://utfs.io/f/deb603b2-c5bc-4b98-b26b-fa176dc0812f-53g9n9.png");
-  object-fit: cover;
-  display: flex;
-  flex-direction: column;
-  //height: 100vh;
-  //width: 100vw;
 }
 
 header {
-  //background-color: var(--accent-color);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
   backdrop-filter: blur(20px);
-  padding: 10px;
-  width: 50vw;
-  margin: 0 auto;
-  border-radius: 8px;
+}
+
+header h1 {
+  margin: 0;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav button {
-  margin: 5px;
-}
-
-img {
-  //width: 80vw;
+  justify-content: space-around;
 }
 
 .restaurant-button {
-  background-color: #fff8f2; /* Main color */
-  color: #333;
-  border: 2px solid #333;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
+  background-color: #ff9800;
+  //color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .restaurant-button:hover {
-  background-color: var(--accent-color);
-  color: #fff8f2;
-  border-color: #fff8f2;
-  transition: 0.3seconds;
+  background-color: aliceblue;
+  opacity: 1;
 }
 
 #content {
-  //margin: auto;
-  border: 2px orange solid;
-  /*height: 100vh;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.menu {
+  backdrop-filter: blur(20px);
 }
 
-.slogan {
-  width: 80vw;
-  //border: 5px black solid;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: White;
-  font-size: 2.5em;
-  backdrop-filter: blur(10px);
+.about,
+.team,
+.menu {
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sub-slogan {
-  //width: 50vw;
-  //border: 5px black solid;
-  margin: 20px 0 0 0;
-  font-size: 1.5em;
+.about img,
+.team-member img {
+  max-width: 100%;
+  height: auto;
+}
+
+.team-member {
+  margin: 20px 0;
+}
+
+.menu-item {
+  background: #fff8e1;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
